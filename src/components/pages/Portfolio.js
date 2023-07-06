@@ -12,14 +12,14 @@ export default function Portfolio() {
 
 
         <a href="https://gator2-0.github.io/Vibe/" class="project-item">
-          <img src="/images/Vibe.png" alt="project pic" className='pic'></img>
+          <img src="./images/Vibe.png" alt="project pic" className='pic'></img>
           <div class="img-title">
             <h3>Vibe</h3>
             <p>HTML, CSS, Javascript</p>
           </div>
         </a>
         <a href="https://github.com/tjsoho/travel-companion" class="project-item">
-          <img src="/images/Travel Companion.png" alt="project pic"
+          <img src="./images/Travel Companion.png" alt="project pic"
           className='pic'></img>
           <div class="img-title">
             <h3>Travel Companion</h3>
