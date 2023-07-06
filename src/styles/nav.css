@@ -1,0 +1,11 @@
+.footer img {
+    width: 75px;
+    padding: 10px;
+}
+
+.footer {
+
+    padding: 30px;
+    border-radius: 6px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.16);
+}

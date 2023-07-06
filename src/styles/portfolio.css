@@ -1,0 +1,11 @@
+.project-item img {
+    width: 75%;
+    height: 75%;
+    padding: 10px;
+}
+
+.img-title {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
