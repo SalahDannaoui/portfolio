@@ -27,12 +27,16 @@ function Contact() {
 
   const checkEmpty = (text) => {
 
-    if (!text || text === ' ') {
-      setErrorMessage('Form items cannot be empty');
+    if (!email || !name || !message) {
+      setErrorMessage('fields cannot be blank');
+      return;
+    }
+   
+    if (!validateEmail(email)) {
+      setErrorMessage('Email is invalid');
       return;
     }
 
-    // return;
   };
 
 
