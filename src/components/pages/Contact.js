@@ -28,7 +28,7 @@ function Contact() {
   const checkEmpty = (text) => {
 
     if (!email || !name || !message) {
-      setErrorMessage('fields cannot be blank');
+      setErrorMessage('Fields cannot be blank');
       return;
     }
    
@@ -44,7 +44,7 @@ function Contact() {
     e.preventDefault();
 
     if (!email || !name || !message) {
-      setErrorMessage('fields cannot be blank');
+      setErrorMessage('Fields cannot be blank');
       return;
     }
    
@@ -62,7 +62,7 @@ function Contact() {
     <div className='contact'>
       <p>Hello {name}</p>
       <form className="form">
-        <h5>email:</h5>
+        <h5>Email:</h5>
         <input className='email'
           value={email}
           name="email"
@@ -71,7 +71,7 @@ function Contact() {
           type="email"
           placeholder="email"
         />
-        <h5>name:</h5>
+        <h5>Name:</h5>
         <input className='name'
           value={name}
           name="name"
@@ -80,7 +80,7 @@ function Contact() {
           type="text"
           placeholder="name"
         />
-        <h5>message:</h5>
+        <h5>Message:</h5>
         <textarea className='message'
           value={message}
           name="Message"

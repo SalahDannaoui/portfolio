@@ -3,7 +3,7 @@ import '../styles/nav.css';
 
 function NavTabs({ currentPage, handlePageChange }) {
   return (
-    <div className='navbar'>
+    <div className='navbar bg'>
     <h1 className='myname'>Salah Dannaoui</h1>
     <ul className="nav nav-tabs navList">
       <li className="nav-item">
