@@ -3,9 +3,9 @@ import '../styles/nav.css';
 
 function NavTabs({ currentPage, handlePageChange }) {
   return (
-    <div>
-    <h1>Salah Dannaoui</h1>
-    <ul className="nav nav-tabs">
+    <div className='navbar'>
+    <h1 className='myname'>Salah Dannaoui</h1>
+    <ul className="nav nav-tabs navList">
       <li className="nav-item">
         <a
           href="#about"

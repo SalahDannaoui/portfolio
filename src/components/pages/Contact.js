@@ -42,31 +42,34 @@ function Contact() {
   };
 
   return (
-    <div>
+    <div className='contact'>
       <p>Hello {name}</p>
       <form className="form">
-        <input
+        <h5>email:</h5>
+        <input className='email'
           value={email}
           name="email"
           onChange={handleInputChange}
           type="email"
           placeholder="email"
         />
-        <input
+        <h5>name:</h5>
+        <input className='name'
           value={name}
           name="name"
           onChange={handleInputChange}
           type="text"
           placeholder="name"
         />
-        <input
+        <h5>message:</h5>
+        <textarea className='message'
           value={message}
           name="Message"
           onChange={handleInputChange}
           type="text"
           placeholder="message"
         />
-        <button type="button" onClick={handleFormSubmit}>
+        <button className='button' type="button" onClick={handleFormSubmit}>
           Submit
         </button>
       </form>
