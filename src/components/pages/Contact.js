@@ -21,7 +21,20 @@ function Contact() {
     } else {
       setMessage(inputValue);
     }
+
+
   };
+
+  const checkEmpty = (text) => {
+
+    if (!text || text === ' ') {
+      setErrorMessage('Form items cannot be empty');
+      return;
+    }
+
+    // return;
+  };
+
 
   const handleFormSubmit = (e) => {
     e.preventDefault();
@@ -50,6 +63,7 @@ function Contact() {
           value={email}
           name="email"
           onChange={handleInputChange}
+          onBlur={checkEmpty}
           type="email"
           placeholder="email"
         />
@@ -58,6 +72,7 @@ function Contact() {
           value={name}
           name="name"
           onChange={handleInputChange}
+          onBlur={checkEmpty}
           type="text"
           placeholder="name"
         />
@@ -66,6 +81,7 @@ function Contact() {
           value={message}
           name="Message"
           onChange={handleInputChange}
+          onBlur={checkEmpty}
           type="text"
           placeholder="message"
         />
